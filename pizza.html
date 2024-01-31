@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizza.css">
+    <title>Ma Pizzeria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Votre pizzeria</h1>
+        <div class="btn" id="addPizzaBtn">Ajouter Pizza</div>
+    </header>
+
+    <section id="art_ctn"></section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="box">
+        <button class="close-btn" id="closeBtn">&#10006;</button>
+        <h1>Modifier la pizza</h1>
+        <form id="pizzaForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="desc">Description :</label>
+            <textarea id="desc" name="desc" required></textarea>
+
+            <label for="picture">Image :</label>
+            <input type="file" id="picture" name="picture">
+
+            <button type="submit">Valider</button>
+            <button type="button" id="cancelBtn">Annuler</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="pizza.js"></script>
+
+</body>
+
+</html>

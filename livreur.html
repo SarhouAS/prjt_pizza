@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="livreur.css">
+    <title>Ma Pizzeria</title>
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1>Votre service de livraison</h1>
+            <button class="btn btn-success" id="addLivreurBtn">Ajouter Livreur</button>
+        </div>
+    </header>
+
+    <section id="livreur_ctn" class="container mt-4"></section>
+
+    <div class="overlay" id="overlay_livreur"></div>
+    <div class="box_livreur container">
+        <button class="close-btn" id="closeLivreurBtn">&#10006;</button>
+        <h1>Ajouter un livreur</h1>
+       
+        <form id="livreurForm">
+            <label for="insertNom">Nom :</label>
+            <input type="text" id="insertNom" required>
+            
+            <label for="insertPrenom">Prénom :</label>
+            <input type="text" id="insertPrenom" required>
+            
+            <label for="insertDateEmbauche">Date d'embauche :</label>
+            <input type="date" id="insertDateEmbauche" required>
+            
+            <button type="submit">Ajouter</button>
+
+            <button type="submit" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-secondary" id="cancelLivreurBtn">Annuler</button>
+        </form>
+        <div id="livreurMessage" class="mt-3"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="livreur.js"></script>
+</body>
+
+</html>
